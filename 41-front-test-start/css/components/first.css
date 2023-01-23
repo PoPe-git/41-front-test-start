@@ -1,0 +1,72 @@
+.first {
+  background-color: var(--green-color);
+  padding: 0px 130px 82px 130px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+}
+
+.left-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  color: var(--background-color);
+}
+
+.left-cont > h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 40px;
+  line-height: 125%;
+}
+
+.left-cont > .welcome {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.left-cont > p:nth-child(2) {
+  font-size: 15px;
+  line-height: 125%;
+}
+
+.explore-btn {
+  height: 48px;
+  width: 170px;
+  background-color: var(--background-color);
+  color: var(--black-color);
+  text-align: center;
+  line-height: 48px;
+  border-radius: 5px;
+}
+
+@media (max-width: 375px) {
+  .main-container img {
+    width: 100%;
+  }
+  .main-container {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .nav-bar > .logo > img {
+    height: 38px;
+  }
+
+  .left-cont > h1 {
+    font-size: 28px;
+  }
+
+  .left-cont > p {
+    font-size: 15px;
+  }
+
+  .left-cont > .explore-btn {
+    font-size: 20px;
+  }
+}
